@@ -61,3 +61,21 @@ function check_form() {
     alert("false address!");
     return false;
 }
+
+
+var interval_id;
+
+function start_counter() {
+    interval_id = setInterval(increase_counter, 2000);
+}
+
+function increase_counter() {
+    var counter_element = document.getElementById("counter");
+    var current = parseFloat(counter_element.innerHTML);
+    var next = current + 2;
+    counter_element.innerHTML = next;
+}
+
+function stop_counter() {
+    clearInterval(interval_id);
+}
