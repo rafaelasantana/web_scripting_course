@@ -29,3 +29,35 @@ function exercise(stringin) {
     var text = stringin + " " + document.getElementById("name").innerHTML;
     return text;
 }
+
+function quadriere() {
+    var number = document.getElementById("input").getAttribute("data-number");
+    var output = document.getElementById("output");
+    output.innerHTML = number*number;
+    alert(number*number);
+}
+
+function check_form() {
+    debugger;
+    var bundesland = document.getElementById("bundesland").value;
+    var plz = document.getElementById("plz").value;
+
+    if (bundesland === 'Wien') {
+        if (plz >= 1010 && plz <= 1239) {
+            alert("correct address!");
+            return true;
+        }
+        alert("false address!");
+        return false;
+    }
+    else if (bundesland === 'Steiermark') {
+        if (plz >= 8000 && plz <= 8999) {
+            alert("correct address!");
+            return true;
+        }
+        alert("false address!");
+        return false;
+    }
+    alert("false address!");
+    return false;
+}

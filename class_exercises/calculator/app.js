@@ -25,6 +25,7 @@ function update_prev_calculations(first_term, second_term, operator, result) {
 }
 
 add.addEventListener("click", function() {
+    debugger;
     var first_term = get_first_term();
     var second_term = get_second_term();
     result.value = parseFloat(first_term) + parseFloat(second_term);
@@ -41,14 +42,14 @@ sub.addEventListener("click", function() {
 mult.addEventListener("click", function() {
     var first_term = get_first_term();
     var second_term = get_second_term();
-    result.value = parseFloat(first_term)*parseFloat(second_term);
+    result.value = parseFloat(first_term) * parseFloat(second_term);
     update_prev_calculations(first_term, second_term, " * ", result.value)
 });
 
 div.addEventListener("click", function() {
     var first_term = get_first_term();
     var second_term = get_second_term();
-    result.value = parseFloat(first_term)/parseFloat(second_term);
+    result.value = parseFloat(first_term) / parseFloat(second_term);
     update_prev_calculations(first_term, second_term, " / ", result.value)
 });
 

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>simpler Javascript Taschenrechner</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="styleCalc.css" />
+        <script src="scriptCalc.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Taschenrechner</h1>
+            <div class="row">
+                <div class="col-md-5">
+                    <label for="zahl1">Eingabe Zahl 1</label>
+                    <input type="number" class="form-control" id="zahl1">
+                    <label for="zahl2">Eingabe Zahl 2</label>
+                    <input type="number" class="form-control" id="zahl2">
+                    <div class="card">
+                        <div class="card-header">
+                            Ergebnis
+                        </div>
+                        <div class="class-body">
+                            <p id="pErgebnis"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-1">
+                    <button class="btn btn-primary" onclick="calculate(this)">+</button>
+                    <button class="btn btn-primary" onclick="calculate(this)">-</button>
+                    <button class="btn btn-primary" onclick="calculate(this)">*</button>
+                    <button class="btn btn-primary" onclick="calculate(this)">/</button>
+                </div>
+                <div class="col-md-5">
+                    <div class="card">
+                        <div class="card-header">
+                            Bisheriger Verlauf:
+                        </div>
+                        <div class="class-body" id="verlauf">
+                    
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </body>
+</html>

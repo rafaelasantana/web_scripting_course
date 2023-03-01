@@ -24,6 +24,26 @@
 
     <p id="name">Rafaela</p>
 
+    <!-- will get this data-number attribute in the quadriere() function-->
+    <p id="input" data-number="25"></p>
+
+    <!-- quadriere() function will set this elemement's innerHTML to the result of the function-->
+    <p id="output"></p>
+
+    <!-- calls quadriere() on click -->
+    <input type="button" value="Quadriere!" onclick="quadriere()"></input>
+
+    <!-- forms with JS -> validation on the client side with check_form() -->
+    <form class="my-3" action="" onsubmit="return check_form()" >
+      <label for="bundesland">Bundesland</label>
+      <input id="bundesland" type="text"/>
+
+      <label for="plz">PLZ</label>
+      <input id="plz" type="number"/>
+
+      <input type="submit" value="Submit"/>
+    </form>
+
 
   </main>
   <footer>
