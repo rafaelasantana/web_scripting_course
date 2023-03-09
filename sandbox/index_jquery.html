@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <!-- add jquery (here minimized version)-->
+        <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+        <script>
+
+            // without jquery
+            //document.getElementById("greeting").innerHTML = "Hello";
+
+            // with jquery
+
+            // ready -> executes function when DOM is ready
+            // $(document).ready(function() {
+            //     $("#greeting").text("Hello with jquery");
+            // });
+
+            // function change_greeting() {
+            //     $("#greeting").text("Hello with jquery");
+            // }
+
+            // // will be executed once the DOM is ready -> short for $(document).ready
+            // $(change_greeting());
+        </script>
+
+    <script defer src="functions_jquery.js"></script>
+
+    </head>
+    <body>
+        <a href="https://www.technikum-wien.at">Link</a>
+        <p id="greeting">Some random text</p>
+
+        <p id="other_greeting">Some other random text</p>
+
+        <button id="clicker">Click me</button>
+
+        <div>
+            <ul>
+                <li class="item">First element</li>
+                <li class="item">Second element</li>
+                <ul>
+                    <li class="item">inside first list - element 1</li>
+                    <li>inside first list - element 2</li>
+                </ul>
+            </ul>
+            <ul>
+                <li>First element ini the second list</li>
+            </ul>
+        </div>
+
+        <input type="text" id="text_input">
+        <button id="add">Add</button>
+        <ol></ol>
+    </body>
+</html>
